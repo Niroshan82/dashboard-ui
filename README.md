@@ -1,4 +1,7 @@
 # DashboardUi
+![Screenshot (538)](https://github.com/user-attachments/assets/963ce981-b8f2-4588-aaf4-529997d0feb3)
+
+![Screenshot (539)](https://github.com/user-attachments/assets/b2edf053-1a02-4f98-81c4-d41fdefe4f0d)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
 
