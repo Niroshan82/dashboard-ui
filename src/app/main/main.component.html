@@ -1,19 +1,28 @@
-<div class="top-section">
-    <app-top-widgets></app-top-widgets>
+<div *ngIf="isUsersRoute">
+    <app-users></app-users>
 </div>
-<div class="middle-section">
-    <div class="widget left">
-        <app-sales-by-month></app-sales-by-month>
+<div *ngIf="isDashboardRoute">
+    <div class="top-section">
+        <app-top-widgets></app-top-widgets>
     </div>
-    <div class="widget right">
-        <app-sales-by-category></app-sales-by-category>
+    <div class="middle-section">
+        <div class="widget left">
+            <app-sales-by-month></app-sales-by-month>
+        </div>
+        <div class="widget right">
+            <app-sales-by-category></app-sales-by-category>
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div class="widget left">
+            <app-last-few-transactions></app-last-few-transactions>
+        </div>
+        <div class="widget right">
+            <app-top-three-products></app-top-three-products>
+        </div>
     </div>
 </div>
-<div class="bottom-section">
-    <div class="widget left">
-        <app-last-few-transactions></app-last-few-transactions>
-    </div>
-    <div class="widget right">
-        <app-top-three-products></app-top-three-products>
-    </div>
+<div *ngIf="isShopsRoute">
+    <app-shops></app-shops>
 </div>
+

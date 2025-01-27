@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faDashboard,
          faLocation,
@@ -7,7 +8,8 @@ import { faDashboard,
          faMoneyBill,
          faChartBar,
          faContactBook,
-         faHand
+         faHand,
+         faUser
          } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -26,4 +28,24 @@ export class SideNavComponent {
   faChartBar = faChartBar;
   faContactBook = faContactBook;
   faHand = faHand;
+  faUser = faUser;
+
+  constructor(private router: Router){
+
+  }
+
+  navigateToUsers(){
+    console.log('user component starts');
+    this.router.navigate(['/users']);
+  }
+
+  navigateToDashboard(){
+    console.log('dashboard component starts');
+    this.router.navigate(['/dashboard']);
+    }
+
+  navigateToShops(){
+    console.log('shops component starts');
+    this.router.navigate(['/shops']);
+    }
 }
